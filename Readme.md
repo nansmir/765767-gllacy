@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Anastasia Smirnova](https://up.htmlacademy.ru/htmlcss/22/user/765767).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Поданев](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 

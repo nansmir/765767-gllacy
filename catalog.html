@@ -25,19 +25,28 @@
               </ul>
                    <div class="search">
                      <a href="#" class="button search">Поиск</a>
-                       <form>
-                         <input type="text" placeholder="Что ищем?">
-                         <button type="submit"></button>
-                       </form>
+                     <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                       <label for="search-field" class="visually-hidden">Поиск</label>
+                       <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+                       <button type="submit" aria-label="Искать!"></button>
+                     </form>
                    </div>
                    <div class="login">
                    <a href="#" class="button login-link">Вход</a>
-                     <form action="#" method="post">
-                       <input type="text" name="login" id="login-field" placeholder="Электронная почта">
-                       <input type="password" name="password" id="password-field" placeholder="Пароль">
-                       <input class="button" type="submit" value="Войти">
-                       <a href="#" class="form-link">Забыли пароль?</a>
-                       <a href="#" class="form-link">Новая регистрация</a>
+                     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                       <p>
+                         <label for="login-field" class="visually-hidden">Электронная почта</label>
+                         <input type="text" name="login" id="login-field" placeholder="Электронная почта">
+                       </p>
+                       <p>
+                         <label for="password-field" class="visually-hidden">Пароль</label>
+                         <input type="password" name="password" id="password-field" placeholder="Пароль">
+                       </p>
+                       <button class="button" type="submit">Войти</button>
+                       <p>
+                         <a href="#" class="form-link">Забыли пароль?</a><br>
+                         <a href="#" class="form-link">Новая регистрация</a>
+                       </p>
                      </form>
                    </div>
                    <div class="cart">
@@ -46,22 +55,26 @@
                       <h2 class="visually-hidden">Корзина</h2>
                           <table>
                               <tr>
-                                <td><span class="cart-modal-delete">x</span></td>
                                 <td>
-                                    <a class="cart-modal-img" href="">Пломбир с апельсиновым джемом
-                                      <img src="img/icecream1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                                    </a>
+                                  <button type="submit" class="cart-delete" aria-label="Удалить товар из корзины">
+                                </td>
+                                <td>
+                                  <a class="cart-modal-img" href="">Пломбир с апельсиновым джемом
+                                    <img src="img/icecream1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                                  </a>
                                 </td>
                                 <td class="cart-standard-weight">1,5 кг</td>
                                 <td class="cart-unit-price">200 руб.</td>
                                 <td class="cart-finish-price">300 руб.</td>
                               </tr>
                               <tr>
-                                <td><span class="cart-modal-delete">x</span></td>
                                 <td>
-                                    <a class="cart-modal-img" href="">Клубничный пломбир с присыпкой из белого шоколада
-                                      <img src="img/icecream3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                                    </a>
+                                  <button type="submit" class="cart-delete" aria-label="Удалить товар из корзины">
+                                </td>
+                                <td>
+                                  <a class="cart-modal-img" href="">Клубничный пломбир с присыпкой из белого шоколада
+                                    <img src="img/icecream3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                                  </a>
                                 </td>
                                 <td class="cart-standard-weight">1,5 кг</td>
                                 <td class="cart-unit-price">300 руб.</td>
@@ -75,7 +88,7 @@
                       </div>
           </nav>
           <p>С 10 до 20, ежедневно<br>
-              8 812 450-25-25</p>
+          <b>8 812 450-25-25</b></p>
       </header>
       <main>
           <ul class="breadcrumbs">
@@ -86,7 +99,67 @@
           <h2>Сливочное мороженое</h2>
           <section class="filters">
             <h3 class="visually-hidden">Фильтр товаров</h3>
-            <!-- форма -->
+              <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                  <legend>Сортировка</legend>
+                    <select>
+                        <option value="light">по популярности</option>
+                        <option value="dark">сначала недорогие</option>
+                        <option value="dark">сначала дорогие</option>
+                        <option value="dark">по жирности</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                  <legend>Цена: 100 руб.- 500 руб.</legend>
+                  <input type="range" name="radio" min="100" max="500" step="10"> <!--Позже сделаю его с двумя ручками -->
+                </fieldset>
+                <fieldset>
+                  <legend>Жирность</legend>
+                    <ul>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-upto0%">
+                        <label for="filter-upto0%">0%</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-upto10%" checked>
+                        <label for="filter-upto10%">до 10%</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-upto30%">
+                        <label for="filter-upto30%">до 30%</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-over30%">
+                        <label for="filter-over30%">выше 30%</label>
+                      </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                  <legend>Наполнители</legend>
+                  <ul>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                      <label for="filter-chocolate">шоколадные</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar-flours" id="filter-sugar-flours" checked>
+                      <label for="filter-sugar-flours">сахарные присыпки</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruit" id="filter-fruit">
+                      <label for="filter-fruit">фрукты</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrups" id="filter-syrups">
+                      <label for="filter-syrups">сиропы</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams" id="filter-jams">
+                      <label for="filter-jams">джемы</label>
+                  </ul>
+                </fieldset>
+                <button type="submit" class="filter-button button">Применить</button>
+              </form>
           </section>
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -173,10 +246,10 @@
       <footer class="main-footer">
           <div class="footer-social">
               <ul>
-                  <li><a class="social-button" href="#">Твиттер</a></li>
-                  <li><a class="social-button" href="#">Инстаграм</a></li>
-                  <li><a class="social-button" href="#">Фейсбук</a></li>
-                  <li><a class="social-button" href="#">Вконтакте</a></li>
+                  <li><a class="social-button" href="#" title="Твиттер" aria-label="Твиттер"></a></li>
+                  <li><a class="social-button" href="#" title="Инстаграм" aria-label="Инстаграм"></a></li>
+                  <li><a class="social-button" href="#" title="Фейсбук" aria-label="Фейсбук"></a></li>
+                  <li><a class="social-button" href="#" title="Вконтакте" aria-label="Вконтакте"></a></li>
               </ul>
           </div>
           <div class="footer-info">

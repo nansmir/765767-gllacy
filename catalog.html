@@ -102,11 +102,11 @@
               <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                   <legend>Сортировка</legend>
-                    <select>
-                        <option value="light">по популярности</option>
-                        <option value="dark">сначала недорогие</option>
-                        <option value="dark">сначала дорогие</option>
-                        <option value="dark">по жирности</option>
+                    <select name="sort-by">
+                        <option>по популярности</option>
+                        <option>сначала недорогие</option>
+                        <option>сначала дорогие</option>
+                        <option>по жирности</option>
                     </select>
                 </fieldset>
                 <fieldset>
@@ -117,19 +117,19 @@
                   <legend>Жирность</legend>
                     <ul>
                       <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-upto0%">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="0%" id="filter-upto0%">
                         <label for="filter-upto0%">0%</label>
                       </li>
                       <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-upto10%" checked>
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="upto10%" id="filter-upto10%" checked>
                         <label for="filter-upto10%">до 10%</label>
                       </li>
                       <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-upto30%">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="upto30%" id="filter-upto30%">
                         <label for="filter-upto30%">до 30%</label>
                       </li>
                       <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-over30%">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="over30%" id="filter-over30%">
                         <label for="filter-over30%">выше 30%</label>
                       </li>
                     </ul>

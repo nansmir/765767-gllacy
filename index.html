@@ -50,43 +50,6 @@
                       </p>
                     </form>
                   </div>
-                  <div class="cart">
-                      <!-- пока не знаю как сделать это выпадающим при наведении -->
-                    <a href="#" class="button cart-link">Корзина</a>
-                      <h2 class="visually-hidden">Корзина</h2>
-                          <table>
-                              <tr>
-                                <td>
-                                  <button type="submit" class="cart-delete" aria-label="Удалить товар из корзины"></button>
-                                </td>
-                                <td>
-                                  <a class="cart-modal-img" href="">Пломбир с апельсиновым джемом
-                                    <img src="img/icecream1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                                  </a>
-                                </td>
-                                <td class="cart-standard-weight">1,5 кг</td>
-                                <td class="cart-unit-price">200 руб.</td>
-                                <td class="cart-finish-price">300 руб.</td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <button type="submit" class="cart-delete" aria-label="Удалить товар из корзины"></button>
-                                </td>
-                                <td>
-                                    <a class="cart-modal-img" href="">Клубничный пломбир с присыпкой из белого шоколада
-                                      <img src="img/icecream3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                                    </a>
-                                </td>
-                                <td class="cart-standard-weight">1,5 кг</td>
-                                <td class="cart-unit-price">300 руб.</td>
-                                <td class="cart-finish-price">450 руб.</td>
-                              </tr>
-                              <tr class="cart-total">
-                                <td colspan="5" >Итого: 750 руб.</td>
-                              </tr>
-                          </table>
-                          <a class="button" href="#">Оформить заказ</a>
-                      </div>
           </nav>
           <p>С 10 до 20, ежедневно<br>
           <b>8 812 450-25-25</b></p>
@@ -151,7 +114,11 @@
           </section>
           <section class="news-subscription">
             <p class="news-subscription-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-              <span class="news-subscription"></span>
+              <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+                  <label for="subscription-field" class="visually-hidden">Электронная почта</label>
+                  <input type="email" name="subscription" id="subscription-field" placeholder="Электронная почта">
+                  <button class="button" type="submit">Отправить</button>
+              </form>
           </section>
           <section class="contacts">
                 <p>Адрес главного офиса и офлайн-магазина:</p>
@@ -180,7 +147,7 @@
                   </ul>
               </div>
               <p class="footer-copyright">
-                <a class="button" href="https://htmlacademy.ru">Сделано в HTML Academy © 2017</a>
+                <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2017</a>
               </p>
           </footer>
           <section class="modal modal-feedback">

@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: none;
+
+  background-color: #849d8f;
+
+  /*   не знаю как сделать разные фоны от слайдера
+  background-image: url("img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  */
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.site-navigation,
+.submenu {
+  list-style: none;
+}
+
+.site-navigation a,
+.login a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.submenu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #849d8f;
+}
+
+.gifts {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: none;
+}
+
+.gifts h3{
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.gifts-left {
+    width: 560px;
+    height: 229px;
+    background-color: #849d8f;
+    background-image: url(../img/raspberries-background.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+ }
+
+.gifts-right {
+     width: 560px;
+     height: 229px;
+     background-color: #849d8f;
+     background-image: url(../img/chocolate-background.jpg);
+     background-position: 0 0;
+     background-repeat: no-repeat;
+  }
+
+.hits p {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.hits span {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.hits a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.hit-catalog-item {
+    list-style: none;
+}
+
+.feature {
+    color: #323232;
+    font-size: 16px;
+    line-height: 22px;
+
+    background-color: #ede1c7;
+    background-image: url(../img/waffle-pattern.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.feature b {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.feature-item {
+    list-style: none;
+}
+
+.news {
+    height: 220px;
+    width: 560px;
+    color: #323232;
+
+    background-color: #ffffff;
+    background-image: url(../img/strawberry-background.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.news a {
+    color: #323232;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.news h2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.news-subscription {
+    height: 220px;
+    width: 560px;
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+
+    background-image: url(../img/subscription-background.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.news-subscription p,
+.subscription-form {
+    height: 210px;
+    width: 550px;
+    background-color: #f8f7f4;
+}
+
+.contacts {
+    color: #323232;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+
+    background-image: url(../img/map.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.contacts div {
+    height: 305px;
+    width: 302px;
+    background-color: #fefefe;
+}
+
+.button {
+    font: inherit;
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: none;
+
+    background-color: #ed5a3d;
+    background-image: linear-gradient(#f26843,#e74a35);
+    border: none;
+  }
+
+.button:hover,
+.button:focus {
+    background-image: linear-gradient(#f58669,#ed705e);
+}
+
+.button:active {
+    background-image: linear-gradient(#e74a35,#f26843);
+}
+
+.main-footer {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footer-social ul,
+.footer-info li {
+  list-style: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-info a {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-copyright a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+
+    background: inherit;
+}
+
+
+.modal-feedback {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.feedback-form {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.cart {
+    color: #323232;
+    background-color: #f8f7f4;
+}
+
+.cart a {
+    color: #323232;
+}
+
+.cart .button {
+    color: #ffffff;
+}
+
+.breadcrumbs,
+.filter-option,
+.catalog-item,
+.pagination-list {
+  list-style: none;
+}
+
+.product-name {
+    text-decoration: underline;
+}

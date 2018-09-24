@@ -281,3 +281,183 @@ a {
 .product-name {
     text-decoration: underline;
 }
+
+/*   сетка  */
+
+html, body {
+    min-width: 1200px;
+    min-height: 2416px;
+
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.main-navigation {
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-right {
+    align-self: flex-end;
+}
+
+.main-header-logo {
+    order: 1;
+
+    width: 154px;
+    height: 64px;
+    padding-right: 24px;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.gifts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.gifts-left {
+    order:1;
+    width:560px;
+}
+
+.gifts-right {
+    order:2;
+    width:560px;
+}
+
+.hits-catalog {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.hit-catalog-item {
+    width: 267px;
+    margin-bottom: 40px;
+}
+
+.feature-items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 1146px;
+    height: 306px;
+}
+
+.feature-item {
+    width: 560px;
+    padding-top: 30px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1146px;
+    height: 220px;
+}
+
+
+.news, .news-subscription {
+    width:560px;
+    height: 220px;
+}
+
+.contacts {
+    width: 1200px;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 27px;
+
+    width:300px;
+    height: 305px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.footer-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/*сетка каталог*/
+
+.inner-page .main-navigation {
+  margin-bottom: 26px;
+}
+
+.breadcrumbs {
+    display: flex;
+}
+
+.filter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-item {
+    width:267px;
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-footer {
+    display: flex;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-info-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: flex-end;
+}

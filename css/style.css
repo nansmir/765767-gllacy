@@ -296,7 +296,6 @@ html, body {
     margin: 0px;
 
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
 }
 
@@ -351,7 +350,6 @@ html, body {
 .feature-items {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     flex-wrap: wrap;
 
     width: 1146px;
@@ -381,28 +379,27 @@ html, body {
     width: 1200px;
 }
 
-.contacts-container {
-    display: flex;
-    justify-content: flex-start;
-    padding-right: 27px;
-
-    width:300px;
-    height: 305px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
 .main-footer {
     display: flex;
     justify-content: space-between;
     margin-top: 36px;
 }
 
+.footer-social {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+}
+
+
 .footer-info-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /*сетка каталог*/
@@ -432,32 +429,6 @@ html, body {
 }
 
 .pagination-list {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.main-footer {
-    display: flex;
-}
-
-.footer-social {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.footer-info {
-    display: flex;
-    justify-content: center;
-}
-
-
-.footer-info-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.footer-copyright {
     display: flex;
     justify-content: flex-end;
 }

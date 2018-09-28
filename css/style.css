@@ -406,6 +406,78 @@ a {
   list-style: none;
 }
 
+.price-filter {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.price-filter legend {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 20px;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+
+
+  border-radius: 20px;
+}
+
+.range-controls .scale {
+  height: 4px;
+
+
+  background: rgba(248, 247, 244, 0.5);
+}
+
+.range-controls .bar {
+  position: absolute;
+  top: 17px;
+  left: 37px;
+  width: 106px;
+  height: 4px;
+
+
+  background: rgba(248, 247, 244, 1);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 34px;
+}
+
+.range-controls .toggle-max {
+  left: 132px;
+}
+
 .product-name {
     text-decoration: underline;
 }

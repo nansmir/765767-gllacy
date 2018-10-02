@@ -109,15 +109,18 @@
           <section class="filters">
             <h3 class="visually-hidden">Фильтр товаров</h3>
               <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset class="sorting">
+                <div class="sortcontainer">
+                <fieldset class="sorting-form">
                   <legend>Сортировка</legend>
-                    <select name="sort-by">
+                    <select name="sort-by" class="sorting">
+                        <svg class="sort-svg" xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5"><path fill="#FFF" d="M4.5 5L0 0h9z"/></svg>
                         <option>по популярности</option>
                         <option>сначала недорогие</option>
                         <option>сначала дорогие</option>
                         <option>по жирности</option>
                     </select>
                 </fieldset>
+                </div>
                 <fieldset class="price-filter">
                   <legend>Цена: 100 руб.- 500 руб.</legend>
                   <div class="range-filter">
@@ -283,6 +286,7 @@
           <p>
             <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2017</a>
           </p>
+          </div>
       </footer>
   </body>
 </html>

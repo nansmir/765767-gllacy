@@ -1282,7 +1282,6 @@ a:active {
 
 .cart-full {
   position: relative;
-  padding-left: 44px;
 }
 
 .cart-full-link::before {
@@ -1306,7 +1305,7 @@ a:active {
 .cart-full:focus .cart-form {
   display:block;
   position: absolute;
-  top: 35px;
+  top: 37px;
   left: -460px;
   border-radius: 5px;
   background-color: rgb(248, 247, 244);
